@@ -1,34 +1,33 @@
 body {
   margin: 0;
-  overflow: hidden;
   font-family: Arial, sans-serif;
+  background-color: #2b1f9c;
 }
 
-/* 3D canvas fills the screen */
-#canvas3d {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
 }
 
-/* Content overlay */
-.content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-  pointer-events: none; /* Lets clicks pass through to 3D canvas */
+#canvas-container {
+  width: 50%;
+  height: 400px;
 }
 
-button {
-  pointer-events: auto; /* Enable clicks for the button */
-  background: #ff3366;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
+.text-content {
+  width: 50%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
 }

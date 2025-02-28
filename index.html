@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Your 3D Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 3D Canvas -->
-  <canvas id="canvas3d"></canvas>
-
-  <!-- Content Overlay -->
-  <div class="content">
-    <h1>Hi, I'm [Your Name]</h1>
-    <p>3D Artist & Developer</p>
-    <button id="spinButton">Spin Faster!</button>
-  </div>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="main.js"></script>
+    <div class="container">
+        <div id="canvas-container"></div>
+        <div class="text-content">
+            <h1>Welcome To everyone!</h1>
+            <p>This is my cool landing page with a 3D model.</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
